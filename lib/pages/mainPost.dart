@@ -42,13 +42,13 @@ class _RescuritPageState extends State<RescuritPage> {
       body: ListView(
         children: <Widget>[
           buildGachiItem(context, gachiItems[1]),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           buildGachiItem(context, gachiItems[0]),
           //buildGachiItem(context, gachiItems[2]),
           //buildGachiItem(context, gachiItems[3]),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Center(
@@ -57,12 +57,12 @@ class _RescuritPageState extends State<RescuritPage> {
           Center(
             child: receiveCode(context),
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
         ],
       ),
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: const BottomBar(),
       floatingActionButton: const FloatingButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

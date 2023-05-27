@@ -34,7 +34,7 @@ class _Select_DetailState extends State<Select_Detail> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text(
+            const Text(
               '성별/인원 선택',
               textAlign: TextAlign.center,
               style: AppTextStyles.postTitleTextStyle,
@@ -42,7 +42,7 @@ class _Select_DetailState extends State<Select_Detail> {
             const SizedBox(
               height: 20,
             ),
-            Text(
+            const Text(
               '누구와 함께 가치를 만들 것입니까?',
               textAlign: TextAlign.center,
               style: AppTextStyles.postSubTextStyle,
@@ -63,7 +63,7 @@ class _Select_DetailState extends State<Select_Detail> {
                   selectedGender = newValue!;
                 });
               },
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: "성별 선택",
                 labelStyle: TextStyle(color: Colors.green),
                 enabledBorder: OutlineInputBorder(
@@ -138,7 +138,7 @@ class Select_Category extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Container(
-                    child: Column(
+                    child: const Column(
                       children: [
                         Text(
                           '카테고리 선택',

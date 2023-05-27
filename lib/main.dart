@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gachi/components/bottomBar.dart';
-import 'package:gachi/pages/VolunteerMainPage.dart';
+import 'package:gachi/pages/bottomMenuPage/VolunteerMainPage.dart';
+import 'package:gachi/pages/bottomMenuPage/chatting.dart';
 import 'package:gachi/pages/loginMain.dart';
 import 'package:gachi/pages/mainPost.dart';
-import 'package:gachi/pages/profileMain.dart';
+import 'package:gachi/pages/bottomMenuPage/profileMain.dart';
 import 'package:gachi/pages/makeGachi.dart';
 import 'package:gachi/pages/settingsMain.dart';
 import 'package:gachi/pages/userAdd/userAdd.dart';
@@ -61,17 +62,17 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: PageView(
         controller: controller,
-        children: const [
+        children: [
           Center(
               child: VolunteerMainPage()
           ),
           Center(child: Text('관심')),
-          Center(child: Text('채팅')),
+          Center(child: Chatting()),
           Center(child: ProfilePage()),
         ],
       ),
       extendBody: true,
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: const BottomBar(),
       floatingActionButton: const FloatingButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

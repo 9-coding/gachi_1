@@ -32,7 +32,7 @@ class MakeGachi extends StatelessWidget {
   Widget build(BuildContext context) {
     return OnBoardingSlider(
       finishButtonText: '가치만들기',
-      finishButtonStyle: FinishButtonStyle(
+      finishButtonStyle: const FinishButtonStyle(
         backgroundColor: Colors.green,
 
       ),
